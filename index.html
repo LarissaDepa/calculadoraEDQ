@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="css/style.css" rel="stylesheet" />
+
+    <title>Calculadora EDQ VB</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="inputCV">
+        <div class="coeficienteVariacao">
+          <label for="cvi">
+            Coeficiente de variação INTRAindividual - CVi</label
+          >
+          <input type="number" step="any" id="cvi" />
+        </div>
+        <div class="coeficientedeVariacao">
+          <label for="cvg">
+            Coeficiente de variação INTERindividual - CVg
+          </label>
+          <input type="number" id="cvg" />
+        </div>
+      </div>
+      <button id="botaoCalcular">calcular</button>
+      <div id="output"> 
+
+        <table id="resultadoTabela" border="2">
+          <tr>
+            <th>%</th>
+            <th>Mínimo</th>
+            <th>Desejável</th>
+            <th>Ótimo</th>
+          </tr>
+          <tr>
+            <td>Erro aleatório</td>
+            <td id="minimoEA"></td>
+            <td id="desejavelEA"></td>
+            <td id="otimoEA"></td>
+          </tr>
+          <tr>
+            <td>Erro sistemático</td>
+            <td id="minimoES"></td>
+            <td id="desejavelES"></td>
+            <td id="otimoES"></td>
+          </tr
+          <tr>
+            <td>Erro total</td>
+            <td id="minimoET"></td>
+            <td id="desejavelET"></td>
+            <td id="otimoET"></td>
+          </tr>
+      </table>
+    </div> 
+    <div id="descricao"><h2>Calculadora das especificações da qualidade desejáveis, mínimas e ótimas para erro aleatório (imprecisão), erro sistemático (inexatidão) e erro total baseado na variação biológica (VB)</h2></div>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
